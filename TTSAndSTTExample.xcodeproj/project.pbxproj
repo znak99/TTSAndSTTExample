@@ -8,17 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		BDE00E0C2AC86835008F0458 /* TTSAndSTTExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE00E0B2AC86835008F0458 /* TTSAndSTTExampleApp.swift */; };
-		BDE00E0E2AC86835008F0458 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE00E0D2AC86835008F0458 /* ContentView.swift */; };
 		BDE00E102AC86836008F0458 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDE00E0F2AC86836008F0458 /* Assets.xcassets */; };
 		BDE00E132AC86836008F0458 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDE00E122AC86836008F0458 /* Preview Assets.xcassets */; };
+		BDE00E1A2AC87717008F0458 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE00E192AC87717008F0458 /* HomeView.swift */; };
+		BDE00E1C2AC87ACF008F0458 /* TTSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE00E1B2AC87ACF008F0458 /* TTSView.swift */; };
+		BDE00E1E2AC87AD5008F0458 /* STTView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDE00E1D2AC87AD5008F0458 /* STTView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BDE00E082AC86835008F0458 /* TTSAndSTTExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TTSAndSTTExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDE00E0B2AC86835008F0458 /* TTSAndSTTExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTSAndSTTExampleApp.swift; sourceTree = "<group>"; };
-		BDE00E0D2AC86835008F0458 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BDE00E0F2AC86836008F0458 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BDE00E122AC86836008F0458 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BDE00E192AC87717008F0458 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		BDE00E1B2AC87ACF008F0458 /* TTSView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTSView.swift; sourceTree = "<group>"; };
+		BDE00E1D2AC87AD5008F0458 /* STTView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = STTView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +56,9 @@
 			isa = PBXGroup;
 			children = (
 				BDE00E0B2AC86835008F0458 /* TTSAndSTTExampleApp.swift */,
-				BDE00E0D2AC86835008F0458 /* ContentView.swift */,
+				BDE00E192AC87717008F0458 /* HomeView.swift */,
+				BDE00E1B2AC87ACF008F0458 /* TTSView.swift */,
+				BDE00E1D2AC87AD5008F0458 /* STTView.swift */,
 				BDE00E0F2AC86836008F0458 /* Assets.xcassets */,
 				BDE00E112AC86836008F0458 /* Preview Content */,
 			);
@@ -137,7 +143,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BDE00E0E2AC86835008F0458 /* ContentView.swift in Sources */,
+				BDE00E1A2AC87717008F0458 /* HomeView.swift in Sources */,
+				BDE00E1C2AC87ACF008F0458 /* TTSView.swift in Sources */,
+				BDE00E1E2AC87AD5008F0458 /* STTView.swift in Sources */,
 				BDE00E0C2AC86835008F0458 /* TTSAndSTTExampleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,11 +283,14 @@
 				DEVELOPMENT_TEAM = SHUGXU55KP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "For Recored";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "For STT";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -304,11 +315,14 @@
 				DEVELOPMENT_TEAM = SHUGXU55KP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "For Recored";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "For STT";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

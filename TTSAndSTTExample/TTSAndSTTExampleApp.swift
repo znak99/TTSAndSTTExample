@@ -11,7 +11,7 @@ import SwiftUI
 struct TTSAndSTTExampleApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeView()
         }
     }
 }
